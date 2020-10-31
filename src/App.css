@@ -1,38 +1,294 @@
-.App {
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  background: url('/assets/background.jpg'); 
+  background-repeat: no-repeat;
+
+ }
+.headers{
+  max-height: 10%;
+  display: flex;
+  overflow: hidden
+}
+.signupBox{
+  background-color: #000000;
+  width: 600px !important;
+  color: white;
+  opacity: 0.8;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ 
+}
+.signupInput{
+  clear: both;
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 0;
+  margin-bottom: 8px 0;
+  border-bottom: 1px solid darkslateblue;
+}
+
+.signupBox h1{
+  border-bottom: 5px solid;
+  float: left;
+}
+.signupBox form{
+  clear: both;
+}
+
+.signupInputName{
+
+  display: inline;
+  font-size: 20px;
+  padding: 8px 0;
+  border-bottom: 1px solid darkslateblue;
+}
+.signupInput form button{
+  text-align: center;
+}
+.signupBox input{
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 10px;
+  color: white;
+
+  margin: 5px 10px;
+}
+.signupBox select option{
+  background-color: black;
+  opacity: 0.7;
+}
+.signupBox select{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 10px;
+  color: white;
+
+  margin: 5px 10px;
+}
+
+.login-box{
+  background-color: #000000;
+  width: 400px !important;
+  color: white;
+  opacity: 0.8;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.login-box h1{
+  float: left;
+  font-size: 30px;
+  border-bottom: 6px solid darkslateblue;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+
+.login-input{
+  clear: both;
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 0;
+  margin-bottom: 8px 0;
+  border-bottom: 1px solid darkslateblue;
+}
+.login-input input{
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 10px;
+  color: white;
+  width: 80%;
+  margin: 5px 10px;
+}
+.login-icon{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#loginbtn{
+  width: 100%;
+  background: none;
+  border: 2px solid darkslateblue;
   color: white;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+.flex-box{
+  width:100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-sgnup{
+  width: 400px;
+  margin: 20px auto ;
+  text-align: center;
+  padding: 5em;
+  background-color: white;
+  border-radius: 10px;
+  background-color: #000000;
+  opacity: 0.6;
+color: white;
+
+}
+.wrapper-sgnup-input{
+  display: block;
+  padding: 10px  0px;
+  margin: 20px auto;
+  border-radius: 15px ;
+  text-decoration: none;
+  text-align: center;
+  border:none;
+  background-color: white;
+  opacity: 1;
+  width: 100%;
+
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper-sgnup-submit{
+  display: inline-block;
+  padding: 20px  20px;
+  margin: 10px;
+  text-align: center;
+  border:none;
+  border-radius: 10px;
+  background-color: white;
+  width: 100px;
+
+}
+.container-flex{
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+ }
+ 
+
+ .container-input {
+   display: block;
+   width: 100%;
+   padding: 20px 20px;
+   margin: 10px auto;
+   border-radius: 15px ;
+   box-sizing: border-box;
+ }
+ .container button {
+  background-color: steelblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-position{
+  position: absolute;
+  top:100px;
+  width: 100%;
+}
+.clearfix{
+  clear: both;
+}
+
+.navCustom{
+  position: fixed;
+  top: 0px;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: darkslateblue;
+  display: block;
+  color: white;
+  transition: all .5s ease;
+}
+.navCustom header{
+  height: 130px;
+  text-align: center;
+  padding: 20px;
+  line-height: 3;
+  font-size: 30px;
+  background-color:darkviolet;
+}
+.navCustom ul{
+  padding: 0px;
+  text-align: center;
+}
+.navCustom li{
+  list-style: none;
+  text-decoration: none;
+  border-top: 1px black solid;
+  line-height: 2.5;
+  padding: 10px;
+}
+.navCustom li:hover{
+margin-left: 50px;
+transition: .4s ;
+}
+
+#check{
+display: none;
+}
+label #menu , label #cancel{
+  position: fixed;
+  cursor: pointer;
+  border-radius: 3px;
+
+}
+
+label #cancel{
+  z-index: 1111;
+  left: -220px;
+  top:10px;
+  font-size: 35px;
+  color: darkviolet;
+  background-color: white;
+  padding: 6px 6px;
+  transition:all 0.5s ease ;
+}
+
+label #menu{
+  top: 40px;
+  left : 45px;
+  font-size: 45px;
+  color: white;
+  padding: 6px 6px;
+  background-color: black;
+}
+#check:checked ~ .navCustom{
+  left:0px;
+}
+#check:checked ~ label #cancel{
+  left: 220px;
+}
+
+#check:checked ~ label #menu{
+  left: 220px;
+  opacity: 0;
+  pointer-events: none; 
+}
+
+.datepicker{
+  background-color: darkgray;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.datepicker div{
+  border: 0px;
+}
+
+.datepicker input{
+  color: #000000;
 }
